@@ -1,0 +1,12 @@
+Run docker continers for Redis, RabbitMQ & and MySQL
+Redis : docker run --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+RabbitMQ : docker run --name rabbitmq rabbitmq -p 8080
+MySQL : docker run --name some-mysql -p 3306 
+
+Run Webserver -> 
+cd webserver
+go run webserver
+
+Run Backend -> 
+cd backend
+go run backend
